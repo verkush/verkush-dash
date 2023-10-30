@@ -1,4 +1,5 @@
 import React from "react";
+import { PowerIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import {
   NAV_SIDEBAR_LINKS,
@@ -54,7 +55,7 @@ export default function Sidebar() {
         </ul>
       </nav>
       <div>
-        <ul role="list" className="flex flex-col">
+        <ul role="list" className="flex flex-col gap-0.5 pt-2 border-t">
           {NAV_SIDEBAR_BOTTOM_LINKS.map((item) => (
             <li key={item.name}>
               <a
